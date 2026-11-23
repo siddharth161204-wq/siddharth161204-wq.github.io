@@ -57,7 +57,19 @@
   </p>
 </header>
 
-<p class="lead">Most thermal and lifetime models of electrochemical energy systems rest on an aggregate: a cell as a uniform heat source, a stack as its mean cell voltage. My work measures what the aggregate costs: how large the error is, what sets it, and how to carry it to a decision rather than assume it away. Two sole-authored manuscripts, both with public preprints, set the question, and a third, from the kinetics study below, was submitted for publication in November 2026; five short pre-registered studies extend them toward one question, how much of the cell-to-cell lifetime divergence in a battery module is thermal in origin. For every study the predictions were committed in a public repository before any analysis, the failed predictions are reported beside the held ones, and the code, results and a one-page note are archived with a DOI.</p>
+<article id="found">
+  <h3>The findings in plain words</h3>
+  <ul class="practice">
+    <li><strong>A cell is not one temperature.</strong> Cooling models usually assume a battery cell heats evenly. In a base-cooled prismatic cell with narrow tabs that assumption underestimates the hottest point by up to 5.9 K and puts it in the wrong place. <a href="#manuscripts">Manuscript 1</a>.</li>
+    <li><strong>The weakest cell ends a stack's life, not the average.</strong> In two five-cell fuel cell stacks the worst cell lost voltage 16.7 and 21.4 % faster than the stack's average, where the fastest of five noisy cells would be 7.5 and 20.0 % faster by selection alone. <a href="#manuscripts">Manuscript 2</a>.</li>
+    <li><strong>How a neighbouring cell is modelled changes the heat it needs before it fails too.</strong> With one published reaction model, in one measured two-cell test, a neighbour treated as a single temperature goes into thermal runaway once about 4.8 kJ of heat reaches it; the same cell resolved in space needs about 7.1 kJ, 1.5 times as much. After a weak trigger the order reverses. <a href="#studies">Study 4</a>.</li>
+    <li><strong>Two identical cells already differ by 3 % in life.</strong> In 45 pairs of duplicate cells cycled the same way, lifetimes differ by 3.0 % on average and 8.7 % at the 95th percentile, the floor any thermal explanation has to beat. <a href="#studies">Study 1</a>.</li>
+    <li><strong>A radial cell model holds until the ends are cooled.</strong> Against a cell resolved in three dimensions it stays within 0.29 K with insulated ends and misses by 1.18 K with cooled ends; one end term recovers most of the miss. <a href="#studies">Study 5</a>.</li>
+    <li><strong>Every prediction was written down in public first.</strong> 204 predictions were committed to a public repository before each analysis; 78 turned out wrong, and all of them are reported below.</li>
+  </ul>
+</article>
+
+<p class="lead">Most thermal and lifetime models of electrochemical energy systems rest on an aggregate: a cell as a uniform heat source, a stack as its mean cell voltage. My work measures what the aggregate costs: how large the error is, what sets it, and how to carry it to a decision rather than assume it away. Two sole-authored manuscripts, both with public preprints, set the question, and a third, from the kinetics study below, is public with that study's archive; five short pre-registered studies extend them toward one question, how much of the cell-to-cell lifetime divergence in a battery module is thermal in origin. For every study the predictions were committed in a public repository before any analysis, the failed predictions are reported beside the held ones, and the code, results and a one-page note are archived with a DOI.</p>
 
 <h2 id="manuscripts">Manuscripts</h2>
 
@@ -69,7 +81,7 @@
 
 <article>
   <h3>Worst-cell degradation and stack-mean life projections in PEM fuel cell stacks: the IEEE PHM 2014 benchmark and a test on a heavy-duty stack</h3>
-  <p class="meta">Sole author. In revision, November 2026. Preprint: <a href="https://doi.org/10.2139/ssrn.7564865">doi 10.2139/ssrn.7564865</a>. Code: <a href="https://doi.org/10.5281/zenodo.23054091">doi 10.5281/zenodo.23054091</a>.</p>
+  <p class="meta">Sole author. Preprint, October 2026: <a href="https://doi.org/10.2139/ssrn.7564865">doi 10.2139/ssrn.7564865</a>. Code: <a href="https://doi.org/10.5281/zenodo.23054091">doi 10.5281/zenodo.23054091</a>.</p>
   <p>Fuel cell stack life is projected from the stack voltage although stacks are monitored cell by cell. Each cell of the benchmark's two five-cell stacks is analysed against a resampling null for the winner's curse, since the fastest of five noisy cells is fast partly by selection: the worst cell lost voltage 16.7 and 21.4 % faster than the stack mean, against 7.5 and 20.0 % from selection alone. Nineteen rate estimators place the two stacks' rate ratio between 0.91 and 1.94, so the estimator alone decides which stack appears to degrade faster. Predictions were written down before opening another laboratory's ten-cell heavy-duty stack; the excess appeared, but not at the predicted size, and the paper reports that.</p>
 </article>
 
